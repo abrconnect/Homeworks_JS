@@ -15,7 +15,7 @@ a > b ? alert(a) : alert(b);
 
 const year = +prompt("Введіть ваш рік народження");
 const currentYear = new Date().getFullYear();
-alert(`Вам ${currentYear - userYear} років`)
+alert(`Вам ${currentYear - year} років`)
 
 // 3. Дано змінні
 
