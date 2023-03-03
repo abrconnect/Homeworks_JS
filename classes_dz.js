@@ -15,7 +15,7 @@ class Phone {
     }
 
     showInfo() {
-        console.log(`This is a phone with price: $${this.price} and color: ${this.color}.`)
+        console.log(`This is a phone with price: $${this.price} and color: ${this.color}.`);
     };
 }
 
@@ -32,7 +32,7 @@ class Iphone extends Phone {
     }
 }
 
-const myIphone = new Iphone(1500, "midnight", "iOS 16")
+const myIphone = new Iphone(1500, "midnight", "iOS 16");
 
 myIphone.showInfo();
 
