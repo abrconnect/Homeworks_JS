@@ -1,0 +1,17 @@
+#buttonAlert {
+    height: 100px;
+    width: 300px;
+    background: yellowgreen;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    height: 100px;
+    width: 200px;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
