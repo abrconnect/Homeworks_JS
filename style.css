@@ -6,6 +6,10 @@
     margin-bottom: 10px;
 }
 
+#buttonAlert:hover {
+    background: transparent;
+}
+
 span {
     height: 100px;
     width: 200px;
