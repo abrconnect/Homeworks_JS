@@ -3,9 +3,7 @@ const ageInput = document.querySelector("#age");
 const cityInput = document.querySelector("#city");
 const createButton = document.querySelector("#create");
 const usersSection = document.querySelector("#users-section");
-// const searchInput = document.querySelector("#search");
-// const searchButton = document.querySelector("#search-button");
-// const cancelSearchButton = document.querySelector("#cancel-search-button");
+
 
 let users = [
     { name: "Igor", city: "Kyiv", age: 20 },
