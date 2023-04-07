@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background: #009FFF;
+    color: #fff;
+
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* використовував генератор градієнтів - https://uigradients.com/#ByDesign*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eee;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b3b3b;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#clear-current-user {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#clear-current-user:hover {
+    background-color: rgb(214, 151, 33);
+}
+
+#users-output {
+    margin: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.todo.done {
+    background-color: #f5f5f5;
+    text-decoration: line-through;
+}
+
+.todo span:first-child {
+    margin-right: 10px;
+}
+
+.todo input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#create-todo-button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todo-search {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+#clear-todo-search {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-todo-search:hover {
+    background-color: #fa1504;
+    transition: all 0.2s ease-in-out;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.delete-todo {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-todo:hover {
+    background-color: #d32f2f;
+}
+
+
+.user-todos-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.user-todos-button.active-user-button {
+    background-color: #2196f3;
+}
+
+#scroll-top-button {
+    background-color: rgba(15, 172, 62, 0.446);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#scroll-top-button:hover {
+    background-color: rgb(5, 176, 57);
+}
