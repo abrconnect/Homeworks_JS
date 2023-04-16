@@ -1,4 +1,4 @@
-// 1. Додати свій сервіс, аналогічно 
+// 1. Додати свій сервіс, аналогічно
 // до нашого підходу (https://jsonplaceholder.typicode.com/todos)
 
 // Код з уроку (рішення нижче)
@@ -30,14 +30,11 @@ class Service {
         return payload;
     }
 
-    async patchRequest(id, data, method = "PATCH") {
-        console.log(method, "METHOD");
+    async patchRequest(id, data) {
         const response = await fetch(`${this.url}/${id}`, {
-            headers: Service.headers,
-            method,
+            method: "PATCH",
             body: JSON.stringify(data),
         });
-
         const payload = await response.json();
         return payload;
     }
@@ -52,7 +49,7 @@ class Service {
     }
 }
 
-// Рішення 
+// ***** Рішення *****
 
 class NewService extends Service {
     constructor(url) {
@@ -64,3 +61,43 @@ const newService = new NewService("https://jsonplaceholder.typicode.com/todos");
 
 newService.getRequest().then((data) => console.log(data));
 
+
+
+// 2. Змініть метод patchRequest класу Service так *****
+// щоб він міг робити як PATCH так і PUT запити *****
+
+// async patchRequest(id, data) {
+//         const response = await fetch(`${this.url}/${id}`, {
+//             method: "PATCH",
+//             body: JSON.stringify(data),
+//         });
+// const payload = await response.json();
+// return payload;
+//     }
+
+// ***** Рішення *****
+
+// class Service {
+//     static headers = {
+//         Accept: "application/json",
+//         "Content-Type": "application/json",
+//     };
+
+//     constructor(url) {
+//         this.url = url;
+//     }
+
+//     async patchRequest(id, data, method = "PATCH") {
+//         const response = await fetch(`${this.url}/${id}`, {
+//             method: method,
+//             body: JSON.stringify(data),
+//         });
+
+//         const payload = await response.json();
+//         return payload;
+//     }
+// }
+
+// У разі необхідності використання PUT запиту, необхідно передати параметр method зі значенням
+// "PUT" (приклад нижче), в інакшому випадку за замовчуванням вказано PATCH, то буде викорнуватись запит типу PATCH
+// const putResponse = await service.patchRequest(111, { title: "title" }, "PUT");
