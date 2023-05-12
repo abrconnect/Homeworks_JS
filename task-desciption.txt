@@ -1,0 +1,4 @@
+
+// 1. Код з уроку [https://github.com/SpaceHolderdJs/f-25/tree/users-search-way-2/JavaScript/Jquery](https://github.com/SpaceHolderdJs/f-25/tree/users-search-way-2/JavaScript/Jquery)
+// 2. На базі коду з уроку використовуючи $ дайте всім елементам на 
+// сторінці ефект зникнення - появлення (fadeIn - fadeOut) на click елемента Body
