@@ -1,0 +1,12 @@
+1. Код з уроку: https://github.com/SpaceHolderdJs/f-25/blob/users-search-way-2/JavaScript/regexps/main.js
+2. Матеріал по регулярних виразах [https://equal-confidence-6b0.notion.site/Regular-expressions-906ad98964204717b02fd768cca6aae5](https://www.notion.so/906ad98964204717b02fd768cca6aae5)
+3. Завдання: 
+
+Напишіть перевірки для строки:
+1. Всі елементи якої є не числами
+2. Всі елементи якої написані з маленької літери
+3. ** Строка є паліндромом (це регуляркою не вийде). Паліндром - строка що читається з ліва на право і з права на ліво однаково (приклад - дід, око)
+
+Ви можете використати JS замість Regexp якщо є бажання
+
+Link DZ - https://equal-confidence-6b0.notion.site/H-W-e66e6b99f70f482fb1561043df065b61
